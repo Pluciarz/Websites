@@ -1,0 +1,464 @@
+*
+{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body
+{
+    margin: 0;
+}
+header
+{
+    height: 20vh;
+    background-image: url(toyota-gr86-sportowym-samochodem-roku-mobile-01.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+h1
+{
+    margin-top: 0;
+    padding: 2vh;
+    color: #d9534f;
+}
+nav
+{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0ad4e;
+    border: 1vh solid #0275d8;
+}
+a
+{
+    text-decoration: none;
+    color: #292b2c;
+    padding: 1vw;
+    background-color: #5bc0de;
+    margin: 1vw;
+    border: 1vh solid #f7f7f7;
+    font-size: 1.8vh;
+}
+a:hover
+{
+    background-color: #d9534f;
+}
+.Wyloguj
+{
+    color: #292b2c;
+    padding: 1vw;
+    background-color: #5bc0de;
+    margin: 1vw;
+    border: 1vh solid #f7f7f7;
+    font-size: 1.8vh;
+}
+.Wyloguj:hover
+{
+    background-color: #d9534f;
+    cursor: pointer;
+}
+main
+{
+    background-color: #d9534f;
+    min-height: 64vh;
+}
+.powitanie
+{
+    display: flex;
+    justify-content: center;
+}
+.powitanie p
+{
+    font-size: 3vh;
+    font-weight: bold;
+    color: #f0ad4e;
+}
+.oferty-tytul
+{
+    display: flex;
+    justify-content: center;
+}
+.oferty-tytul h2
+{
+    font-size: 3vh;
+}
+.oferty
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+article
+{
+    padding: 4vh;
+    margin: 2vh;
+    border: 1vh solid #f0ad4e;
+    text-align: center;
+}
+.oferta-zdjecie
+{
+    height: 20vh;
+    width: 20vw;
+}
+.oferta-model
+{
+    font-size: 3vh;
+    color: #0275d8;
+}
+.oferta-koszt
+{
+    font-size: 2vh;
+    color: #5bc0de;
+}
+.oferta-form
+{
+    border: 1vh solid #5bc0de;
+    height: 5vh;
+    width: 20vw;
+}
+.oferta-dane
+{
+    background-color: #5cb85c;
+    height: 5vh;
+    width: 20vw;
+    font-size: 4vh;
+    color: #f0ad4e;
+    border: 0;
+}
+.oferta-dane:hover
+{
+    background-color: #0275d8;
+    cursor: pointer;
+}
+footer
+{
+    background-color: #0275d8;
+    text-align: right;
+    height: 5vh;
+}
+footer p
+{
+    margin: 0;
+    font-size: 4vh;
+    color: #f0ad4e;
+}
+.konto-main
+{
+    display: flex;
+    justify-content: space-between;
+}
+.konto-main p
+{
+    margin: 0;
+    font-size: 3vh;
+}
+.zmien-form
+{
+    border: 1vh solid #5bc0de;
+    height: 5vh;
+    width: 20vw;
+}
+.zmien-input
+{
+    background-color: #5cb85c;
+    height: 5vh;
+    width: 20vw;
+    font-size: 3vh;
+    color: #f0ad4e;
+    border: 0;
+}
+.zmien-input:hover
+{
+    background-color: #0275d8;
+    cursor: pointer;
+}
+.konto-zdjecie
+{
+    height: 30vh;
+    width: 15vw;
+}
+.usun-form
+{
+    border: 1vh solid #292b2c;
+    height: 5vh;
+    width: 20vw; 
+    margin: 2vh;
+    margin-left: 0;
+}
+.usun-input
+{
+    background-color: #f7f7f7;
+    height: 5vh;
+    width: 20vw;
+    font-size: 3vh;
+    color: #d9534f;
+    border: 0;
+}
+.usun-input:hover
+{
+    background-color: #d9534f;
+    color: #f7f7f7;
+    cursor: pointer;
+}
+.konto-pojazd
+{
+    display: flex;
+    align-items: center;
+}
+.logowanie-main
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.logowanie-label
+{
+    font-size: 4vh;
+}
+.logowanie-input
+{
+    height: 6vh;
+    width: 15vw;
+    font-size: 3vh;
+}
+.logowanie-button
+{
+    background-color: #5cb85c;
+    height: 6vh;
+    width: 13vw;
+    font-size: 3vh;
+    color: #f0ad4e;
+    border: 1vh solid #5bc0de;
+}
+.logowanie-button:hover
+{
+    background-color: #0275d8;
+    cursor: pointer;
+}
+.blad
+{
+    font-size: 3vh;
+}
+.rejestracja-main, .dodawanie-main
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.rejestracja-label, .dodawanie-label
+{
+    font-size: 2vh;
+}
+.rejestracja-input, .dodawanie-input
+{
+    height: 3vh;
+    width: 15vw;
+    font-size: 2vh;
+}
+.rejestracja-button, .dodawanie-button
+{
+    background-color: #5cb85c;
+    height: 4vh;
+    width: 7.5vw;
+    font-size: 1.5vh;
+    color: #f0ad4e;
+    border: 1vh solid #5bc0de;
+}
+.rejestracja-button:hover, .dodawanie-button:hover
+{
+    background-color: #0275d8;
+    cursor: pointer;
+}
+.zmiana-main, .edycja-main
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.zmiana-label, .edycja-label
+{
+    font-size: 4vh;
+}
+.zmiana-input, .edycja-input
+{
+    height: 6vh;
+    width: 20vw;
+    font-size: 4vh;
+}
+.zmiana-button, .edycja-button
+{
+    background-color: #5cb85c;
+    height: 6vh;
+    width: 20.4vw;
+    font-size: 3vh;
+    color: #f0ad4e;
+    border: 1vh solid #5bc0de;
+}
+.zmiana-button:hover, .edycja-button:hover
+{
+    background-color: #0275d8;
+    cursor: pointer;
+}
+.admin-main
+{
+    display: flex;
+    justify-content: center;
+}
+.admin-link
+{
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 7vh;
+}
+.uzytkownicy-zdjecie
+{
+    height: 20vh;
+    width: 10vw;
+}
+.uzytkownicy-main
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+table
+{
+    border-collapse: collapse;
+}
+td, th
+{
+    border: 0.5vh solid black;
+    text-align: center;
+}
+.uzytkownicy-button
+{
+    border: 1vh solid #292b2c; 
+    background-color: #f7f7f7;
+    height: 20vh;
+    width: 10vw;
+    font-size: 3vh;
+    color: #d9534f;
+}
+.uzytkownicy-button:hover
+{
+    background-color: #d9534f;
+    color: #f7f7f7;
+    cursor: pointer;
+}
+.samochody-main
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.samochody-zdjecie
+{
+    height: 20vh;
+    width: 17vw;
+}
+.samochody-button
+{
+    border: 1vh solid #5bc0de; 
+    background-color: #5cb85c;
+    height: 20vh;
+    width: 10vw;
+    font-size: 3vh;
+    color: #f0ad4e;
+}
+.samochody-button:hover
+{
+    background-color: #0275d8;
+    cursor: pointer;
+}
+.samochody-usun
+{
+    border: 1vh solid #292b2c; 
+    background-color: #f7f7f7;
+    height: 20vh;
+    width: 10vw;
+    font-size: 3vh;
+    color: #d9534f;
+}
+.samochody-usun:hover
+{
+    background-color: #d9534f;
+    color: #f7f7f7;
+    cursor: pointer;
+}
+.dane-main p
+{
+    margin: 0;
+    font-size: 3vh;
+}
+.dane-form
+{
+    border: 1vh solid #5bc0de;
+    height: 5vh;
+    width: 30vw;
+}
+.dane-button
+{
+    background-color: #5cb85c;
+    height: 5vh;
+    width: 30vw;
+    font-size: 3vh;
+    color: #f0ad4e;
+    border: 0;
+}
+.dane-button:hover
+{
+    background-color: #0275d8;
+    cursor: pointer;
+}
+.dane-zdjecie
+{
+    height: 30vh;
+    width: 30vw;
+}
+.usun-form1
+{
+    border: 1vh solid #292b2c;
+    height: 5vh;
+    width: 30vw; 
+    margin: 2vh;
+    margin-left: 0;
+}
+.usun-input1
+{
+    background-color: #f7f7f7;
+    height: 5vh;
+    width: 30vw;
+    font-size: 3vh;
+    color: #d9534f;
+    border: 0;
+}
+.usun-input1:hover
+{
+    background-color: #d9534f;
+    color: #f7f7f7;
+    cursor: pointer;
+}
+.dane-pobierz-section
+{
+    min-height: 21vh;
+    display: flex;
+    align-items: center;
+}
+.dane-pobierz-a
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 28vw;
+    margin-left: 0;
+    font-size: 3vh;
+}
+#tak, #nie
+{
+    width: 2vw;
+}
