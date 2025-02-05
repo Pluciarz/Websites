@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmy</title>
+    <link rel="stylesheet" href="styl1.css">
+</head>
+<body>
+    <nav>
+        <h3>Dostępne gatunki filmu</h3>
+        <ol>
+            <li>Sci-Fi</li>
+            <li>animacja</li>
+            <li>dramat</li>
+            <li>horror</li>
+            <li>komedia</li>
+        </ol>
+        <p><a href="kadr.jpg">Pobierz obraz</a></p>
+        <p><a href="repertuar-kin.pl" target="_blank">Sprawdź repertuar kin</a></p>
+    </nav>
+    <section id="gorny">
+        <h1>FILMOTEKA</h1>
+    </section>
+    <section id="srodkowy">
+        <form action="dodaj.php" method="POST">
+            <label for="tytul">Tytuł: </label>
+            <input type="text" name="tytul" id="tytul"><br>
+            <label for="gatunek">Gatunek filmu: </label>
+            <input type="number" name="gatunek" id="gatunek"><br>
+            <label for="rok">Rok produkcji: </label>
+            <input type="number" name="rok" id="rok"><br>
+            <label for="ocena">Ocena: </label>
+            <input type="number" name="ocena" id="ocena"><br>
+            <input type="reset" value="CZYŚĆ">
+            <input type="submit" value="DODAJ" name="submit" id="submit">
+        </form>
+    </section>
+    <section id="dolny">
+        <img src="kadr.jpg" alt="zdjęcia filmowe">
+    </section>
+    <footer>
+        <p>Autor strony: Adam Dąbrowski</p>
+    </footer>
+</body>
+</html>

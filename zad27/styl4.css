@@ -1,0 +1,49 @@
+* {
+  font-family: Garamond;
+}
+body {
+  margin: 0;
+}
+h1 {
+  margin-top: 0;
+}
+h2 {
+  margin: 0;
+}
+header {
+  background-color: saddlebrown;
+  color: white;
+  text-align: center;
+  height: 50px;
+}
+.Lewy {
+  background-color: tan;
+  height: 500px;
+  width: 40%;
+}
+.Prawy {
+  background-color: tan;
+  height: 250px;
+  width: 325%;
+}
+footer {
+  background-color: saddlebrown;
+}
+form {
+  background-color: saddlebrown;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  width: 300px;
+}
+input {
+  margin: 5px;
+}
+p::before {
+  content: "STATUS: ";
+}
+main {
+  display: flex;
+}
