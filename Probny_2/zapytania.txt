@@ -1,0 +1,4 @@
+1. SELECT * FROM `pracownicy`;
+2. SELECT * FROM `pracownicy` WHERE `nazwisko`='Król';
+3. SELECT COUNT(*) AS 'ilość pracowników' FROM `pracownicy`;
+4. INSERT INTO `pracownicy` VALUES('', 'Rak', 'Monika', '00101843690');
