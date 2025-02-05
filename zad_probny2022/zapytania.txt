@@ -1,0 +1,4 @@
+1. SELECT DISTINCT `Data`, `Godzina` FROM `rezerwacje`;
+2. SELECT `Rzad`, `Miejsce` FROM `rezerwacje` WHERE `Data`='2022-08-09' AND `Godzina`='18:00:00';
+3. SELECT COUNT(`Miejsce`) FROM `rezerwacje` WHERE `Data`='2022-08-09' AND `Godzina`='18:00:00';
+4. SELECT `Rzad`, `Miejsce`, `Data`, `Godzina` FROM `rezerwacje` INNER JOIN `kasjerzy` ON `rezerwacje`.`Id_kasjera`=`kasjerzy`.`Id` WHERE `Nazwisko`='Bednarski' AND `Imie`='Jan';

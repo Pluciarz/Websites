@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzeria Margherita</title>
+    <link rel="stylesheet" href="styl6.css">
+</head>
+<body>
+    <header>
+        <h2>Najlepsza pizza w mieście<img src="logo.png" alt="logo" height="100px"></h2>
+    </header>
+    <section id="lewy">
+        <p>U nas zamówisz pizzę z dowozem</p>
+        <a href="logo.png">Nasze logo</a>
+    </section>
+    <section id="srodkowy">
+        <h3>Pizzeria Margherita</h3>
+        <p>ul. Botaniczna 4, Zielona Góra</p>
+    </section>
+    <section id="prawy">
+        <h3>Oferta</h3>
+        <ol>
+            <li>Pizza</li>
+            <li>Lasagne</li>
+            <li>Sałatki</li>
+        </ol>
+        <p><a href="Oferta.txt" id="pobierz">Pobierz pełną ofertę</a></p>
+    </section>
+    <section id="dolny">
+        <h3>Oblicz koszt dostawy</h3>
+        <input type="checkbox" name="jestem" id="jestem">
+        <label for="jestem">Jestem z Zielonej Góry</label>
+        <p>albo</p>
+        <label for="kilometry">Podaj liczbę kilometrów od Zielonej Góry: </label>
+        <input type="number" name="kilometry" id="kilometry"><br>
+        <button type="button" onclick="oblicz()">Oblicz</button>
+        <p id="p"></p>
+    </section>
+    <footer>
+        Stronę internetową opracował: <b>Adam Dąbrowski</b>
+    </footer>
+    <script>
+        function oblicz()
+        {
+            let jestem = document.getElementById("jestem").checked;
+            let kilometry = document.getElementById("kilometry").value;
+            let p = document.getElementById("p");
+            if (jestem == true)
+            {
+                p.innerHTML = "Dowieziemy Twoją pizzę za darmo"
+            }
+            else
+            {
+                let koszt = 2 * kilometry;
+                p.innerHTML = "Dowóz będzie Cię kosztował " + koszt + " złotych";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usługi informatyczne</title>
+    <link rel="stylesheet" href="styl.css">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+</head>
+<body>
+    <section id="kontener">
+        <section id="logo">
+            <img src="logo.png" alt="logo firmy">
+        </section>
+        <nav>
+            <a href="index.html">O nas</a>
+            <a href="uslugi.html">Usługi</a>
+            <a href="kontakt.html">Kontakt</a>
+        </nav>
+        <header>
+            <img src="animacja.gif" alt="animacja">
+        </header>
+        <main>
+            <hr>
+            <h2>Kontakt</h2>
+            <table>
+                <form action="">
+                    <tr>
+                        <td>Imię: </td>
+                        <td><input type="text" id="imie"></td>
+                    </tr>
+                    <tr>
+                        <td>Nazwisko: </td>
+                        <td><input type="text" id="nazwisko"></td>
+                    </tr>
+                    <tr>
+                        <td>E-mail: </td>
+                        <td><input type="text" id="email"></td>
+                    </tr>
+                    <tr>
+                        <td>Usługa: </td>
+                        <td><textarea name="opis" id="opis"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="checkbox" name="zapoznanie" id="zapoznanie"> Zapoznałam/em się z regulaminem</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><button type="reset">Resetuj</button><button type="button" onclick="przeslij()">Prześlij</button></td>
+                    </tr>
+                </form>
+            </table>
+            <p id="p"></p>
+            <hr>
+        </main>
+        <footer>
+            <p>Autor strony: <b>Adam Dąbrowski</b></p>
+        </footer>
+    </section>
+    <script>
+        function przeslij()
+        {
+            let imie = document.getElementById("imie").value;
+            let nazwisko = document.getElementById("nazwisko").value;
+            let email = document.getElementById("email").value;
+            let opis = document.getElementById("opis").value;
+            let zapoznanie = document.getElementById("zapoznanie").checked;
+            let p = document.getElementById("p");
+            if (zapoznanie == false)
+            {
+                p.style.color = "red";
+                p.innerHTML = "Musisz zapoznać się z regulaminem";
+            }
+            else
+            {
+                p.innerHTML = imie.toUpperCase() + " " + nazwisko.toUpperCase() + "<br>" + "Treść Twojej sprawy: " + opis + "<br>" + "Na podany e-mail zostanie wysłana oferta.";
+            }
+        }
+    </script>
+</body>
+</html>

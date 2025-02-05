@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>malarz</title>
+    <link rel="stylesheet" href="styl_1.css">
+</head>
+<body>
+    <header>
+        <h1>Malowanie pokoi i biur</h1>
+    </header>
+    <main>
+        <section class="lewy">
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="mieszamy.html">Mieszamy</a></li>
+                <li><a href="cena.html">Wyceniamy</a></li>
+            </ul>
+        </section>
+        <section class="srodkowy">
+            <h2>Zapotrzebowanie na farbę</h2>
+            <form action="">
+                <label for="numer">Powierzchnia malowania (m<sup>2</sup>)</label>
+                <input type="number" name="numer" id="numer">
+                <button type="button" onclick="oblicz()">Policz</button>
+            </form>
+            <p id="p"></p>
+        </section>
+        <section class="prawy">
+            <img src="obraz.png" alt="Próbki farb">
+        </section>
+    </main>
+    <footer>
+        <h3>MALARZ</h3>
+        <p>Stronę opracował: Adam Dąbrowski</p>
+    </footer>
+    <script>
+        function oblicz()
+        {
+            let numer = document.getElementById("numer").value;
+            let p = document.getElementById("p");
+            let iloscprzed = numer / 4;
+            let ilosc = Math.round(iloscprzed);
+            p.innerHTML = "Liczba potrzebnych puszek: " + ilosc;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zamówienia hurtowe</title>
+    <link rel="stylesheet" href="styl4.css">
+</head>
+<body>
+    <header>
+        <h1>Sieci komputerowe</h1>
+    </header>
+    <main>
+        <section class="lewy">
+            <h2>Aktualizacja i zamówienia materiałów</h2>
+            <p>Do wewnętrznego użytku firmy</p>
+            <img src="obraz.png" alt="sieć komputerowa">
+        </section>
+        <section class="prawy">
+            <table>
+                <tr>
+                    <th>Produkt</th>
+                    <th>Jednostka</th>
+                    <th>Dostępna ilość</th>
+                    <th>Aktualizacja</th>
+                    <th>Zamówienie</th>
+                </tr>
+                <tr>
+                    <td id="p1">Skrętka U/UTP drut</td>
+                    <td>metr</td>
+                    <td id="d1">20</td>
+                    <td><button type="button" onclick="aktualizacja('d1')">Aktualizuj</button></td>
+                    <td><button type="button" onclick="zamowienie('p1')">Zamów</button></td>
+                </tr>
+                <tr>
+                    <td id="p2">Skrętka U/UTP linka</td>
+                    <td>metr</td>
+                    <td id="d2">2</td>
+                    <td><button type="button" onclick="aktualizacja('d2')">Aktualizuj</button></td>
+                    <td><button type="button" onclick="zamowienie('p2')">Zamów</button></td>
+                </tr>
+                <tr>
+                    <td id="p3">Wtyki 8P8C</td>
+                    <td>sztuki</td>
+                    <td id="d3">10</td>
+                    <td><button type="button" onclick="aktualizacja('d3')">Aktualizuj</button></td>
+                    <td><button type="button" onclick="zamowienie('p3')">Zamów</button></td>
+                </tr>
+                <tr>
+                    <td id="p4">Moduły Keystone</td>
+                    <td>sztuki</td>
+                    <td id="d4">30</td>
+                    <td><button type="button" onclick="aktualizacja('d4')">Aktualizuj</button></td>
+                    <td><button type="button" onclick="zamowienie('p4')">Zamów</button></td>
+                </tr>   
+            </table>
+        </section>
+    </main>
+    <footer>
+        <a href="http://sieci.pl/" target="blank">Nasza strona internetowa</a>
+        <p>Stronę przygotował: Adam Dąbrowski</p>
+    </footer>
+    <script>
+        let id_z = 0;
+        function braki(nowa)
+        {
+            let d1 = document.getElementById("d1");
+            let d1_w = document.getElementById("d1").innerHTML;
+            let d2 = document.getElementById("d2");
+            let d2_w = document.getElementById("d2").innerHTML;
+            let d3 = document.getElementById("d3");
+            let d3_w = document.getElementById("d3").innerHTML;
+            let d4 = document.getElementById("d4");
+            let d4_w = document.getElementById("d4").innerHTML;
+            switch (d1_w)
+            {
+                case "0": d1.style.backgroundColor = "red";
+                break;
+                case "1": 
+                case "2": 
+                case "3": 
+                case "4": 
+                case "5": d1.style.backgroundColor = "yellow";
+                break;
+                default: d1.style.backgroundColor = "Honeydew";
+                break;
+            }
+            switch (d2_w)
+            {
+                case "0": d2.style.backgroundColor = "red";
+                break;
+                case "1": 
+                case "2": 
+                case "3": 
+                case "4": 
+                case "5": d2.style.backgroundColor = "yellow";
+                break;
+                default: d2.style.backgroundColor = "Honeydew";
+                break;
+            }
+            switch (d3_w)
+            {
+                case "0": d3.style.backgroundColor = "red";
+                break;
+                case "1": 
+                case "2": 
+                case "3": 
+                case "4": 
+                case "5": d3.style.backgroundColor = "yellow";
+                break;
+                default: d3.style.backgroundColor = "Honeydew";
+                break;
+            }
+            switch (d4_w)
+            {
+                case "0": d4.style.backgroundColor = "red";
+                break;
+                case "1": 
+                case "2": 
+                case "3": 
+                case "4": 
+                case "5": d4.style.backgroundColor = "yellow";
+                break;
+                default: d4.style.backgroundColor = "Honeydew";
+                break;
+            }
+            if (nowa != null)
+            {
+                let nowa1 = document.getElementById(nowa);
+                let nowa1_w = document.getElementById(nowa).innerHTML;
+                switch (nowa1_w)
+                {
+                    case "0": nowa1.style.backgroundColor = "red";
+                    break;
+                    case "1": 
+                    case "2": 
+                    case "3": 
+                    case "4": 
+                    case "5": nowa1.style.backgroundColor = "yellow";
+                    break;
+                    default: nowa1.style.backgroundColor = "Honeydew";
+                    break;
+                }
+            }
+        }
+        braki();
+        function aktualizacja(d)
+        {
+            let nowa = window.prompt("Podaj nową ilość:");
+            document.getElementById(d).innerHTML = nowa;
+            braki(d);
+        }
+        function zamowienie(p)
+        {
+            id_z++;
+            let p1 = document.getElementById(p).innerHTML
+            window.alert("Zamówienie nr: " + id_z + " Produkt: " + p1);
+        }
+    </script>
+</body>
+</html>

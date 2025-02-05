@@ -1,0 +1,71 @@
+main
+{
+    display: flex;
+}
+a
+{
+    color: yellow;
+}
+header, footer, .prawy
+{
+    background-color: #5957a1;
+}
+.lewy
+{
+    background-color: #bbadcd;
+    width: 65%;
+    overflow: scroll;
+}
+header, footer
+{
+    text-align: center;
+}
+.prawy
+{
+    text-align: center;
+    width: 35%;
+}
+*
+{
+    font-family: Arial;
+    color: white;
+}
+header
+{
+    padding: 10px;
+    height: 70px;
+}
+.lewy, .prawy
+{
+    height: 450px;
+}
+footer
+{
+    height: 50px;
+}
+hr
+{
+    border-color: yellow;
+}
+li
+{
+    list-style: square;
+    color: yellow;
+    list-style-position: inside;
+}
+li::marker
+{
+    color: white;
+}
+td, th
+{
+    border: black dotted 1px;
+}
+button
+{
+    color: black;
+}
+input
+{
+    color: black;
+}

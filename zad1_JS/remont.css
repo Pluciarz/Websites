@@ -1,0 +1,41 @@
+header
+{
+    background-color: rgb(255, 213, 162);
+    text-align: center;
+    padding: 20px;
+}
+nav
+{
+    display: flex;
+}
+.menu
+{
+    background-color: rgb(191, 112, 17);
+    color: white;
+    text-align: center;
+    font-size: 150%;
+    width: 25%;
+}
+main
+{
+    height: 400px;
+}
+footer
+{
+    background-color: rgb(191, 112, 17);
+    color: white;
+    text-align: right;
+    font-size: 150%;
+}
+a
+{
+    color: white;
+}
+button
+{
+    background-color: brown;
+    border: solid brown 2px;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+}

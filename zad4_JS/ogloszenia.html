@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal ogłoszeniowy</title>
+    <link rel="stylesheet" href="styl5.css">
+</head>
+<body>
+    <header>
+        <h1>Portal Ogłoszeniowy</h1>
+    </header>
+    <section id="pierwszy">
+        <img src="logo-male.png" alt="małe logo">
+    </section>
+    <section id="drugi">
+        <h3>Adres</h3>
+        <p>ul. Morska 45</p>
+        <p>Gdynia</p>
+    </section>
+    <section id="trzeci">
+        <h3>telefon</h3>
+        <p>601601601</p>
+    </section>
+    <section id="czwarty">
+        <h3>e-mail</h3>
+        <p>ogloszenia@poczta.pl</p>
+    </section>
+    <section id="lewy">
+        <h2>Ceny ogłoszeń</h2>
+        <table>
+            <tr>
+                <td>Liczba ogłoszeń</td>
+                <td>Cena ogłoszenia</td>
+                <td>Bonus</td>
+            </tr>
+            <tr>
+                <td>1 - 50</td>
+                <td>2 PLN</td>
+                <td rowspan="2">Subskrypcja newslettera to upust 0,20 PLN na ogłoszenie</td>
+            </tr>
+            <tr>
+                <td>51 i więcej</td>
+                <td>1 PLN</td>
+            </tr>
+        </table>
+    </section>
+    <section id="srodkowy">
+        <h2>Witamy na stronie naszego portalu!</h2>
+        <img src="logo-duze.png" alt="ogłoszenia">
+    </section>
+    <section id="prawy">
+        <h2>Ile kosztuje ogłoszenie?</h2>
+        Podaj liczbę ogłoszeń:<br><input type="number" id="liczba"><br>
+        <input type="checkbox" id="upust">Policz upust na newsletter<br>
+        <button type="button" onclick="oblicz()">Oblicz</button>
+        <p id="p"></p>
+    </section>
+    <footer>
+        Portal ogłoszeniowy opracował: Adam Dąbrowski
+    </footer>
+    <script>
+        function oblicz()
+        {
+            let liczba = document.getElementById("liczba").value;
+            let upust = document.getElementById("upust").checked;
+            let p = document.getElementById("p");
+            let koszt = liczba;
+            if (koszt >= 1 && koszt <= 50)
+            {
+                koszt *= 2;
+            }
+            if (upust == true)
+            {
+                koszt -= liczba * 0.2
+            }
+            p.innerHTML = "Koszt ogłoszeń: " + koszt + " PLN";
+        }
+    </script>
+</body>
+</html>

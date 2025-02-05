@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wyremontuj mieszkanie</title>
+    <link rel="stylesheet" href="remont.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="logo">
+    </header>
+    <nav>
+        <section class="menu">
+            <a href="index.html">O NAS</a>
+        </section>
+        <section class="menu">
+            <a href="kontakt.html">KONTAKT</a>
+        </section>
+        <section class="menu">
+            <a href="kalkulator.html">KALKULATOR</a>
+        </section>
+        <section class="menu">
+            <a href="http://www.jakremontowac.pl/" target="_blank">POLECANE STRONY</a>
+        </section>
+    </nav>
+    <main>
+        <h1>Malowanie pokoju: 8 zł za m<sup>2</sup></h1>
+        <p>Wymiary pokoju w metrach: 
+        <input type="number" name="szerokosc" id="szerokosc">
+        <input type="number" name="dlugosc" id="dlugosc">
+        </p>
+        <button type="button" onclick="oblicz()">OBLICZ KOSZT</button>
+        <p id="p1"></p>
+        <p id="p2"></p>
+    </main>
+    <footer>
+        <p>Autor strony: Adam Dąbrowski</p>
+    </footer>
+    <script>
+    function oblicz()
+    {
+        let szerokosc = document.getElementById("szerokosc").value;
+        let dlugosc = document.getElementById("dlugosc").value;
+        let p1 = document.getElementById("p1");
+        let p2 = document.getElementById("p2");
+        const wysokosc = 2.7;
+        const cena = 8;
+        let powierzchniaCalkowita = 2 * (szerokosc * wysokosc) + 2 * (dlugosc * wysokosc);
+        let koszt = powierzchniaCalkowita * cena;
+        koszt = koszt.toFixed(2);
+        p1.innerHTML = "Powierzchnia całkowita ścian: " + powierzchniaCalkowita;
+        p2.innerHTML = "Koszt malowania: " + koszt + " zł";
+    }
+    </script>
+</body>
+</html>
