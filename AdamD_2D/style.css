@@ -1,0 +1,106 @@
+*
+{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+body
+{
+    min-height: 100vh;
+    background-color: cadetblue;
+}
+nav
+{
+    display: flex;
+    justify-content: flex-end;
+    background-color: yellow;
+    padding: 2vh;
+}
+
+header
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+}
+main
+{
+    display: flex;
+    justify-content: center;
+}
+.form
+{
+    display: flex;
+    flex-flow: column wrap;
+    width: 50vw;
+    text-align: center;
+}
+#plik
+{
+    display: flex;
+    align-self: center;
+}
+label
+{
+    font-size: 2vh;
+    margin-top: 2vh;
+}
+input
+{
+    margin: 1vh;
+    font-size: 2vh;
+}
+p
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    margin-bottom: 1vh;
+    font-size: 2vh;
+}
+a, .Wyloguj
+{
+    text-decoration: none;
+    padding: 2vh;
+    border: solid black 0.25vh;
+    background-color: white;
+    color: darkblue;
+    cursor: pointer;
+}
+a:hover, .Wyloguj:hover, .reset:hover, .submit:hover
+{
+    filter: brightness(75%);
+}
+.reset, .submit
+{
+    height: 5vh;
+}
+.reset
+{
+    background-color: red;
+    margin-bottom: 0.5vh;
+}
+.submit
+{
+    background-color: dodgerblue;
+    margin-top: 0.5vh;
+}
+img
+{
+    width: 6vw;
+    height: 6vw;
+    border-radius: 100%;
+}
+.wiadomosc
+{
+    margin-top: 0.25vh;
+    margin-bottom: 3vh;
+}
+.info
+{
+    margin-bottom: 0.25vh;
+    margin-top: 3vh;
+}
+
+
+
